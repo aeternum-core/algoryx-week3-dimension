@@ -201,8 +201,8 @@ npm run build
 <br />
 
 ```
-OBSIDIAN // SPATIAL DESIGN LABORATORY © 2026
-Form in Another Dimension · Released under MIT License
+OBSIDIAN © 2026
+Form in Another Dimension
 ```
 
 </div>
