@@ -22,13 +22,13 @@ export const HeroSection: React.FC = () => {
       {/* Subtle architectural border lines framing the hero */}
       <div className="absolute inset-x-6 md:inset-x-12 top-24 bottom-12 border-x border-[#e2ded6] pointer-events-none" />
 
-      <div className="relative max-w-7xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-10 items-center z-10">
+      <div className="relative max-w-7xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center z-10">
         {/* Left Column: Architectural Editorial Headlines */}
         <motion.div
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="lg:col-span-6 flex flex-col justify-center space-y-6 pt-4 lg:pt-0"
+          className="lg:col-span-7 flex flex-col justify-center space-y-6 pt-4 lg:pt-0"
         >
           {/* Eyebrow & Secondary Category */}
           <div className="flex flex-wrap items-center gap-3">
@@ -41,8 +41,8 @@ export const HeroSection: React.FC = () => {
           </div>
 
           {/* Main Title: DESIGN IN ANOTHER DIMENSION. */}
-          <div className="space-y-1">
-            <h1 className="font-display font-black text-5xl sm:text-6xl xl:text-7xl tracking-[-0.03em] leading-[0.92] text-[#111215]">
+          <div className="space-y-1 max-w-xl">
+            <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-[2.75rem] xl:text-[3.5rem] tracking-[-0.035em] leading-[0.93] text-[#111215]">
               {HERO_CONTENT.headlineLine1} <br />
               {HERO_CONTENT.headlineLine2} <br />
               <span className="text-[#ff4800]">{HERO_CONTENT.headlineLine3}</span>
@@ -96,7 +96,7 @@ export const HeroSection: React.FC = () => {
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.0, ease: [0.16, 1, 0.3, 1], delay: 0.15 }}
-          className="lg:col-span-6 relative flex items-center justify-center min-h-[440px] sm:min-h-[520px] lg:min-h-[600px]"
+          className="lg:col-span-5 relative flex items-center justify-center min-h-[440px] sm:min-h-[500px] lg:min-h-[560px]"
         >
           {/* Subtle Technical Canvas Framing with Measurement Corners */}
           <div className="absolute inset-0 border border-[#e2ded6] bg-[#faf9f6] rounded-sm pointer-events-none overflow-hidden">
@@ -135,7 +135,7 @@ export const HeroSection: React.FC = () => {
           </div>
 
           {/* 3D Scene Viewport */}
-          <div className="relative w-full h-[440px] sm:h-[500px] lg:h-[560px] z-10">
+          <div className="relative w-full h-[440px] sm:h-[480px] lg:h-[540px] z-10">
             <SceneCanvas
               materialMode="graphite"
               lightMode="studio"
@@ -143,6 +143,7 @@ export const HeroSection: React.FC = () => {
               rotationSpeed={1.0}
               enableZoom={false}
               enableOrbit={true}
+              cameraPosition={[0, 0, 5.6]}
             />
           </div>
         </motion.div>

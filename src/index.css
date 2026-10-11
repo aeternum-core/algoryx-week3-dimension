@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: 'Syne', sans-serif;
+  --font-display: 'Outfit', 'Plus Jakarta Sans', sans-serif;
   --font-mono: 'Space Grotesk', monospace;
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 
