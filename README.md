@@ -36,7 +36,7 @@
 <br />
 
 <div align="center">
-  <img src="screenshots/manifesto_preview.png" alt="OBSIDIAN Interface Preview" width="100%" style="border-radius: 8px; border: 1px solid #e2ded6;" />
+  <img src="screenshots/obsidian_preview.png" alt="OBSIDIAN Interface Preview" width="100%" style="border-radius: 8px; border: 1px solid #e2ded6;" />
 </div>
 
 <br />
