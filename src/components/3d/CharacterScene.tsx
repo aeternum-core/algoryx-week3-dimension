@@ -66,10 +66,15 @@ function CharacterModel({ model, isPlaying = true }: CharacterModelProps) {
   );
 }
 
-// Preload character models for instant switching
+// Preload Hero model immediately; defer below-the-fold models to idle time
 useGLTF.preload('/models/Mew.glb');
-useGLTF.preload('/models/Robot.glb');
-useGLTF.preload('/models/Iron%20Man.glb');
+if (typeof window !== 'undefined') {
+  const deferPreload = window.requestIdleCallback || ((cb: () => void) => setTimeout(cb, 1500));
+  deferPreload(() => {
+    useGLTF.preload('/models/Robot.glb');
+    useGLTF.preload('/models/Iron%20Man.glb');
+  });
+}
 
 interface CharacterSceneProps {
   model: ModelMetadata;

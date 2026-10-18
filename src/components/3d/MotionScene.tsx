@@ -90,8 +90,13 @@ function MotionModel({
   );
 }
 
-useGLTF.preload('/models/Robot.glb');
-useGLTF.preload('/models/Interactive%20Waving%20Neural%20Grid.glb');
+if (typeof window !== 'undefined') {
+  const deferPreload = window.requestIdleCallback || ((cb: () => void) => setTimeout(cb, 2500));
+  deferPreload(() => {
+    useGLTF.preload('/models/Robot.glb');
+    useGLTF.preload('/models/Interactive%20Waving%20Neural%20Grid.glb');
+  });
+}
 
 interface MotionSceneProps {
   model: ModelMetadata;
