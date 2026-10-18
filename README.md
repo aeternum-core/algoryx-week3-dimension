@@ -21,21 +21,6 @@
 
 ---
 
-## 📑 Evaluator Executive Summary & Rubric Alignment
-
-This submission was engineered to demonstrate senior-level digital craft, combining the narrative polish of Apple product pages, the interaction precision of 21st.dev components, and the tactile 3D presentation of Algoryx's Digital Playground.
-
-| Evaluation Criteria | Weight | Implementation Highlights |
-|---|---|---|
-| **UI/UX Design** | **25%** | Bespoke mineral-white foundation (`#f5f4ef`, `#faf9f5`), charcoal typography (`#191a18`), electric orange accents (`#ff5500`), and restrained cyan (`#0891b2`). High-contrast editorial type system (*Space Grotesk*, *DM Sans*, *DM Mono*) with zero layout shift. |
-| **Creativity & Storytelling** | **20%** | Signature **5-scene scrubbed 3D scroll narrative ("BEYOND THE FRAME")** powered by GSAP ScrollTrigger, featuring smooth camera transitions, topology reveals, and real-time interactive takeover. |
-| **3D Asset Integration** | **20%** | **All four official Algoryx Community GLB assets** fully integrated. Real model geometries, PBR materials, and embedded keyframe animation clips verified and preserved without alteration or stock substitutes. |
-| **Code Quality & Architecture** | **15%** | Decomposed from a monolithic file into **10 modular, typed components**. Strict separation between GSAP scroll choreography, R3F scenegraph updates, and UI states. Robust custom WebGL Error Boundary. |
-| **Responsiveness** | **10%** | Fluid `clamp()` typography, mobile slide-down drawer, non-blocking touch orbit controls, and deliberate viewport compositions tested across Desktop (1440px), Laptop (1280px), Tablet (768px), and Mobile (390px / 360px). |
-| **Performance Engineering** | **10%** | Intersection-based canvas throttling (`frameloop="demand"` when off-screen), DPR clamped to `[1, 1.75]`, single reusable canvas pattern (zero context recreation), and Rollup `manualChunks` vendor code-splitting (app bundle: 86 kB / 30 kB gzip). |
-
----
-
 ## 💎 The Four Official Algoryx Community Assets
 
 Every supplied 3D model was audited at the binary GLTF level to inspect bounding boxes, materials, and internal animation channels:
