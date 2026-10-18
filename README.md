@@ -6,6 +6,10 @@
 **Algoryx Technologies UI/UX Internship — Week 3 Submission**  
 *An art-directed, scroll-driven 3D web experience integrating all four official Algoryx Community GLB assets.*
 
+### 🔗 [Live Production Demo: algoryx-week3-dimension.vercel.app](https://algoryx-week3-dimension.vercel.app/)
+
+[![Live Deployment](https://img.shields.io/badge/Vercel_Live_Demo-algoryx--week3--dimension.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://algoryx-week3-dimension.vercel.app/)
+
 [![TypeScript Strict](https://img.shields.io/badge/TypeScript-5.6_Strict-3178c6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![React 18](https://img.shields.io/badge/React-18.3-61dafb?style=flat-square&logo=react)](https://react.dev/)
 [![Three.js](https://img.shields.io/badge/Three.js-r171-black?style=flat-square&logo=three.js)](https://threejs.org/)
@@ -177,21 +181,22 @@ npm run preview
 
 ---
 
-## 🌐 Deployment Instructions (Vercel)
+## 🌐 Live Production Deployment & Hosting
 
-This repository is pre-configured for one-click deployment on [Vercel](https://vercel.com):
+The project is deployed and live on Vercel's global Edge Network:
 
-1. Push this repository to GitHub:
-   ```bash
-   git push -u origin main
-   ```
-2. Import the project in Vercel.
-3. Configure project settings:
-   - **Framework Preset:** `Vite`
-   - **Root Directory:** `./`
-   - **Build Command:** `npm run build`
-   - **Output Directory:** `dist`
-4. Click **Deploy**.
+- **Official Live Application:** [https://algoryx-week3-dimension.vercel.app/](https://algoryx-week3-dimension.vercel.app/)
+- **Hosting Platform:** Vercel (Edge CDN)
+- **Framework Preset:** Vite
+- **Continuous Deployment:** Automatically synced with the GitHub `main` branch
+- **Edge Caching:** Optimized with immutable 1-year `Cache-Control` headers for all 3D GLB assets via `vercel.json`
+
+### Deployment Configuration
+If deploying a new instance:
+1. Framework Preset: `Vite`
+2. Root Directory: `./`
+3. Build Command: `npm run build`
+4. Output Directory: `dist`
 
 ---
 
